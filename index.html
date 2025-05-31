@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Emergency Guide</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="header">
+        <h1>🚨 First Aid Emergency Guide</h1>
+        <p>Quick access to life-saving emergency instructions</p>
+    </div>
+
+    <div class="nav-tabs">
+        <button class="nav-tab active" data-tab="emergencies">🚨 Emergencies</button>
+        <button class="nav-tab" data-tab="localized">🇳🇬 Local Tips</button>
+        <button class="nav-tab" data-tab="kids">👶 Kids Mode</button>
+        <button class="nav-tab" data-tab="stories">📖 Stories</button>
+        <button class="nav-tab" data-tab="kit">🎒 First Aid Kit</button>
+    </div>
+
+    <!-- Emergency Tab -->
+    <div id="emergencies" class="tab-content active">
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="🔍 Search by Emergency Type..." id="searchBox">
+        </div>
+
+        <div class="container">
+            <div class="categories-grid" id="categoriesGrid">
+                <div class="category-card allergies" data-category="allergies">
+                    <span class="card-icon">🤧</span>
+                    <h3 class="card-title">Allergic Reactions</h3>
+                    <p class="card-subtitle">Severe allergic responses</p>
+                    <p class="card-info">Anaphylaxis, food allergies, insect stings</p>
+                </div>
+
+                <div class="category-card bleeding" data-category="bleeding">
+                    <span class="card-icon">🩸</span>
+                    <h3 class="card-title">Bleeding Control</h3>
+                    <p class="card-subtitle">Stop severe bleeding</p>
+                    <p class="card-info">Cuts, wounds, hemorrhaging</p>
+                </div>
+
+                <div class="category-card burns" data-category="burns">
+                    <span class="card-icon">🔥</span>
+                    <h3 class="card-title">Burns Treatment</h3>
+                    <p class="card-subtitle">Thermal, chemical, electrical burns</p>
+                    <p class="card-info">1st, 2nd, and 3rd degree burns</p>
+                </div>
+
+                <div class="category-card shock" data-category="shock">
+                    <span class="card-icon">⚡</span>
+                    <h3 class="card-title">Shock Treatment</h3>
+                    <p class="card-subtitle">Medical shock response</p>
+                    <p class="card-info">Hypovolemic, cardiogenic shock</p>
+                </div>
+
+                <div class="category-card head-injury" data-category="head-injury">
+                    <span class="card-icon">🧠</span>
+                    <h3 class="card-title">Head Injuries</h3>
+                    <p class="card-subtitle">Concussions, head trauma</p>
+                    <p class="card-info">Skull fractures, brain injuries</p>
+                </div>
+
+                <div class="category-card heart-attack" data-category="heart-attack">
+                    <span class="card-icon">💔</span>
+                    <h3 class="card-title">Heart Attack</h3>
+                    <p class="card-subtitle">Cardiac emergency response</p>
+                    <p class="card-info">Chest pain, cardiac arrest</p>
+                </div>
+
+                <div class="category-card poisoning" data-category="poisoning">
+                    <span class="card-icon">☠️</span>
+                    <h3 class="card-title">Poisoning</h3>
+                    <p class="card-subtitle">Toxic substance ingestion</p>
+                    <p class="card-info">Chemical, food, drug poisoning</p>
+                </div>
+
+                <div class="category-card broken-bone" data-category="broken-bone">
+                    <span class="card-icon">🦴</span>
+                    <h3 class="card-title">Broken Bones</h3>
+                    <p class="card-subtitle">Fracture management</p>
+                    <p class="card-info">Sprains, fractures, dislocations</p>
+                </div>
+
+                <div class="category-card unconscious" data-category="unconscious">
+                    <span class="card-icon">😵</span>
+                    <h3 class="card-title">Unconsciousness</h3>
+                    <p class="card-subtitle">Unresponsive person care</p>
+                    <p class="card-info">Fainting, coma, loss of consciousness</p>
+                </div>
+
+                <div class="category-card heat-stroke" data-category="heat-stroke">
+                    <span class="card-icon">🌡️</span>
+                    <h3 class="card-title">Heat Stroke</h3>
+                    <p class="card-subtitle">Heat-related emergencies</p>
+                    <p class="card-info">Hyperthermia, heat exhaustion</p>
+                </div>
+
+                <div class="category-card asthma" data-category="asthma">
+                    <span class="card-icon">🫁</span>
+                    <h3 class="card-title">Asthma Attack</h3>
+                    <p class="card-subtitle">Breathing difficulties</p>
+                    <p class="card-info">Severe asthma, respiratory distress</p>
+                </div>
+
+                <div class="category-card choking" data-category="choking">
+                    <span class="card-icon">🗣️</span>
+                    <h3 class="card-title">Choking</h3>
+                    <p class="card-subtitle">Airway obstruction</p>
+                    <p class="card-info">Foreign object in throat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Localized Tips Tab -->
+    <div id="localized" class="tab-content">
+        <div class="container">
+            <h2 style="text-align: center; color: white; margin-bottom: 30px;">🇳🇬 Nigeria-Specific Emergency Tips</h2>
+            <div class="categories-grid">
+                <div class="category-card snake-bite" data-category="snake-bite">
+                    <span class="card-icon">🐍</span>
+                    <h3 class="card-title">Snake Bites</h3>
+                    <p class="card-subtitle">Venomous snake encounters</p>
+                    <p class="card-info">Carpet viper, cobra, mamba bites</p>
+                </div>
+
+                <div class="category-card malaria" data-category="malaria-emergency">
+                    <span class="card-icon">🦟</span>
+                    <h3 class="card-title">Malaria Crisis</h3>
+                    <p class="card-subtitle">Severe malaria complications</p>
+                    <p class="card-info">Cerebral malaria, convulsions</p>
+                </div>
+
+                <div class="category-card poisoning" data-category="local-poisoning">
+                    <span class="card-icon">🌿</span>
+                    <h3 class="card-title">Local Plant Poisoning</h3>
+                    <p class="card-subtitle">Traditional herb reactions</p>
+                    <p class="card-info">Agbo, local herbs, castor seeds</p>
+                </div>
+
+                <div class="category-card heat-stroke" data-category="harmattan-issues">
+                    <span class="card-icon">🌪️</span>
+                    <h3 class="card-title">Harmattan Health Issues</h3>
+                    <p class="card-subtitle">Dry season complications</p>
+                    <p class="card-info">Severe dehydration, respiratory issues</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kids Mode Tab -->
+    <div id="kids" class="tab-content">
+        <div class="container">
+            <div class="kids-mode">
+                <h2 style="text-align: center; color: #e91e63; margin-bottom: 20px;">👶 First Aid for Kids!</h2>
+                
+                <div class="kids-card">
+                    <div class="big-emoji">🤕</div>
+                    <h3>When Someone Gets Hurt</h3>
+                    <p>1. Stay calm and don't panic<br>
+                    2. Tell an adult immediately<br>
+                    3. Don't move the hurt person<br>
+                    4. Be a good helper by staying nearby</p>
+                </div>
+
+                <div class="kids-card">
+                    <div class="big-emoji">🩹</div>
+                    <h3>Small Cuts and Scrapes</h3>
+                    <p>1. Wash your hands first<br>
+                    2. Clean the cut with water<br>
+                    3. Put on a clean bandage<br>
+                    4. Tell an adult what happened</p>
+                </div>
+
+                <div class="kids-card">
+                    <div class="big-emoji">🆘</div>
+                    <h3>Emergency Numbers to Remember</h3>
+                    <p>Police: 199<br>
+                    Emergency: 112<br>
+                    Fire Service: 199<br>
+                    Always ask an adult to call!</p>
+                </div>
+
+                <div class="kids-card">
+                    <div class="big-emoji">🏥</div>
+                    <h3>When to Get Help Fast</h3>
+                    <p>• Someone can't breathe<br>
+                    • Lots of blood<br>
+                    • Person won't wake up<br>
+                    • Very bad pain<br>
+                    Run to get an adult NOW!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stories Tab -->
+    <div id="stories" class="tab-content">
+        <div class="container">
+            <h2 style="text-align: center; color: white; margin-bottom: 30px;">📖 Real-Life Survivor Stories</h2>
+            <div class="stories-section">
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">A</div>
+                        <div>
+                            <div class="story-author">Adaora Okafor</div>
+                            <div class="story-location">Lagos, Nigeria</div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        "My 5-year-old was choking on a piece of meat at dinner. I remembered the Heimlich maneuver from this guide and immediately performed it. The food came out after 3 thrusts. I'm so grateful I knew what to do - it saved my child's life."
+                    </div>
+                    <span class="story-tag">Choking</span>
+                </div>
+                <div class="story-card">
+                    <div class="story-header">
+                   <div class="story-avatar">F</div>
+                   <div>
+                   <div class="story-author">Farhan Liman</div>
+                   <div class="story-location">Kaduna, Nigeria</div>
+                   </div>
+                   </div>
+                   <div class="story-content">
+                    "During a football match, one of the players twisted his ankle badly and couldn't put weight on it. I quickly applied the RICE method - Rest, Ice, Compression, and Elevation. I immobilized the ankle with a makeshift splint using available materials until medical help arrived. The player avoided further injury."
+                   </div>
+                   <span class="story-tag">Sprain</span>
+                   </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">E</div>
+                        <div>
+                            <div class="story-author">Emeka Nwankwo</div>
+                            <div class="story-location">Abuja, Nigeria</div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        "My colleague collapsed at work with chest pains. While waiting for the ambulance, I gave him aspirin and kept him calm as instructed. The doctors said the aspirin helped prevent further damage to his heart. First aid knowledge truly makes a difference."
+                    </div>
+                    <span class="story-tag">Heart Attack</span>
+                </div>
+                <div class="story-card">
+                    <div class="story-header">
+                   <div class="story-avatar">A</div>
+                   <div>
+                   <div class="story-author">Adaora Okafor</div>
+                   <div class="story-location">Lagos, Nigeria</div>
+                   </div>
+                   </div>
+                   <div class="story-content">
+                    "My neighbor's toddler started choking on a piece of candy during a family gathering. I immediately performed back blows and chest thrusts as I learned in first aid training. The candy dislodged and the child could breathe again. The parents were so grateful - it could have been much worse."
+                   </div>
+                   <span class="story-tag">Choking</span>
+                   </div>
+                   
+                   <div class="story-card">
+                    <div class="story-header">
+                   <div class="story-avatar">K</div>
+                   <div>
+                   <div class="story-author">Kemi Adebayo</div>
+                   <div class="story-location">Ibadan, Nigeria</div>
+                   </div>
+                   </div>
+                   <div class="story-content">
+                    "During a church event, an elderly man fell and hit his head on the concrete. He was bleeding heavily but conscious. I applied direct pressure with a clean cloth and kept his head elevated until paramedics arrived. The bleeding stopped and he recovered well thanks to quick action."
+                   </div>
+                   <span class="story-tag">Head Injury</span>
+                   </div>
+                   
+                   <div class="story-card">
+                    <div class="story-header">
+                   <div class="story-avatar">T</div>
+                   <div>
+                   <div class="story-author">Tunde Bakare</div>
+                   <div class="story-location">Port Harcourt, Nigeria</div>
+                   </div>
+                   </div>
+                   <div class="story-content">
+                    "My daughter accidentally spilled boiling water on her arm while helping in the kitchen. I immediately ran cold water over the burn for 20 minutes and covered it with a clean, damp cloth. At the hospital, they said the quick cooling prevented deeper tissue damage."
+                   </div>
+                   <span class="story-tag">Burns</span>
+                   </div>
+                   
+                   <div class="story-card">
+                    <div class="story-header">
+                   <div class="story-avatar">F</div>
+                   <div>
+                   <div class="story-author">Fatima Aliyu</div>
+                   <div class="story-location">Kano, Nigeria</div>
+                   </div>
+                   </div>
+                   <div class="story-content">
+                    "At the market, a young woman suddenly collapsed and started convulsing. I recognized it as a seizure, so I cleared the area around her, placed something soft under her head, and timed the episode. When it ended, I put her in the recovery position until help arrived."
+                   </div>
+                   <span class="story-tag">Seizure</span>
+                   </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">F</div>
+                        <div>
+                            <div class="story-author">Fatima Ibrahim</div>
+                            <div class="story-location">Kano, Nigeria</div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        "During Harmattan season, my elderly father started showing signs of severe dehydration and confusion. I recognized the symptoms from the local tips section and immediately gave him small sips of ORS solution while rushing to the hospital. The doctors said early intervention saved his life."
+                    </div>
+                    <span class="story-tag">Dehydration</span>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">K</div>
+                        <div>
+                            <div class="story-author">Kemi Adeleke</div>
+                            <div class="story-location">Ibadan, Nigeria</div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        "My brother was bitten by a snake while farming. I knew not to cut the wound or apply ice. Instead, I kept him calm, immobilized the limb, and got him to the hospital quickly. The antivenom worked because we acted fast and correctly."
+                    </div>
+                    <span class="story-tag">Snake Bite</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Aid Kit Tab -->
+    <div id="kit" class="tab-content">
+        <div class="container">
+            <h2 style="text-align: center; color: white; margin-bottom: 30px;">🎒 First Aid Kit Essentials</h2>
+            <div class="kit-section">
+                <div class="kit-card">
+                    <div class="kit-header">
+                        <div class="kit-icon">🏠</div>
+                        <div class="kit-title">Home Kit</div>
+                        <div class="kit-subtitle">For family emergencies</div>
+                    </div>
+                    <ul class="kit-list">
+                        <li>Emergency blanket</li>
+                        <li>Basic bandages and gauze</li>
+                        <li>Antiseptic wipes</li>
+                        <li>Instant cold pack</li>
+                        <li>Disposable gloves</li>
+                        <li>Emergency water and snacks</li>
+                        <li>Flashlight and batteries</li>
+                        <li>Emergency phone charger</li>
+                        <li>Road emergency numbers</li>
+                        <li>Small fire extinguisher</li>
+                    </ul>
+                </div>
+
+                <div class="kit-card">
+                    <div class="kit-header">
+                        <div class="kit-icon">🎒</div>
+                        <div class="kit-title">School/Work Kit</div>
+                        <div class="kit-subtitle">Portable essentials</div>
+                    </div>
+                    <ul class="kit-list">
+                        <li>Small bandages</li>
+                        <li>Antiseptic wipes</li>
+                        <li>Pain relievers (personal use)</li>
+                        <li>Allergy medication (if needed)</li>
+                        <li>Emergency contact card</li>
+                        <li>Inhaler (if asthmatic)</li>
+                        <li>Hand sanitizer</li>
+                        <li>Small scissors</li>
+                        <li>Glucose tablets</li>
+                        <li>Whistle for emergencies</li>
+                    </ul>
+                </div>
+
+                <div class="kit-card">
+                    <div class="kit-header">
+                        <div class="kit-icon">🇳🇬</div>
+                        <div class="kit-title">Nigeria-Specific Items</div>
+                        <div class="kit-subtitle">Local emergency additions</div>
+                    </div>
+                    <ul class="kit-list">
+                        <li>ORS packets (for dehydration)</li>
+                        <li>Malaria rapid test kit</li>
+                        <li>Antimalarial medication</li>
+                        <li>Snake bite bandage</li>
+                        <li>Activated charcoal tablets</li>
+                        <li>Insect repellent</li>
+                        <li>Extra water purification tablets</li>
+                        <li>Local emergency numbers card</li>
+                        <li>Rehydration salts</li>
+                        <li>Dust masks for Harmattan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🚨 Emergency Contacts</h3>
+                <ul>
+                    <li>Emergency Services: 112, 199</li>
+                    <li>Police: 199</li>
+                    <li>Fire Service: 199</li>
+                    <li>Lagos State Emergency: 767, 199</li>
+                    <li>NEMA: 08023230012</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>🏥 Medical Resources</h3>
+                <ul>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">Find Nearest Hospital</a></li>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">Poison Control Center</a></li>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">Blood Bank Locator</a></li>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">Ambulance Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>📚 Learn More</h3>
+                <ul>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">CPR Training Centers</a></li>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">First Aid Courses</a></li>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">Download Offline Guide</a></li>
+                    <li><a href="#" onclick="alert('Feature coming soon!')">Community Training</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>ℹ️ About This Guide</h3>
+                <p>This guide provides general first aid information. Always seek professional medical help in emergencies. The information here is not a substitute for proper medical training.</p>
+                <p><strong>Remember:</strong> When in doubt, call emergency services immediately!</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 First Aid Emergency Guide. Created to save lives. Share knowledge, save lives. 🆘</p>
+            <p>Last updated: May 2025 | Made with ❤️ for Nigeria</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="emergencyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-subtitle" id="modalSubtitle"></p>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
